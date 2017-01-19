@@ -1,0 +1,26 @@
+package lcm;
+
+struct diagnosis_t
+{
+  int32_t dev_address;
+  int32_t ident_number;
+  string status;
+  string identifier_diag;
+  string channel_diag;
+  string device_diag;
+  boolean enabled;
+}
+
+struct io_t
+{
+  int32_t dev_address;
+  int32_t module_id;
+  int32_t io_type;
+  string module_data;
+}
+
+struct generic_msg_t
+{
+  int16_t msg_type;
+  string data;
+}
